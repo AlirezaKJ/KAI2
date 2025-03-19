@@ -1,0 +1,64 @@
+header {
+  background-image: url(../assets/header/home\ header\ bg.png);
+}
+
+.quickinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0px;
+}
+.quickinfo p {
+  font-size: 28px;
+  width: 70%;
+  margin: 10px 0px;
+
+}
+.quickinfo .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  gap: 30px;
+}
+.quickinfo .icons svg {
+  width: 60px;
+  fill: var(--text);
+}
+.quickinfo .smallindustry {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.quickinfo .smallindustry .industryitem {
+  width: 40%;
+  height: 500px;
+  margin-bottom: 6.6vw;
+  background: red;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease-in-out;
+  &:hover { 
+    scale: 1.05;
+  }
+  &:hover .industrytitle {
+    background: rgba(0, 0, 0, 1);
+  }
+}
+.quickinfo .smallindustry .industryitem .industrytitle {
+  color: var(--bg);
+  font-size: 36px;
+  font-weight: 700;
+  padding: 20px 26px;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  transition: all 0.25s ease-in-out;
+}
