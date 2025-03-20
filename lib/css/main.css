@@ -9,8 +9,8 @@
 }
 
 :root {
-  --ff: "Manrope", "Segoe UI";
-  --ffh: "Shippori", "Segoe UI";
+  --ff: "Manrope";
+  --ffh: "Shippori";
   --text: #1E1E1E;
   --bg: #F8F8F8;
   --altbg: #DADADA;
@@ -38,7 +38,7 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
   font-family: var(--ffh);
 }
 

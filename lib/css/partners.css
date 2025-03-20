@@ -1,0 +1,41 @@
+header {
+  background-image: url(../assets/header/partners\ bg.png);
+}
+
+header .centerstuff .icon svg {
+  fill: var(--text);
+}
+header .centerstuff .headertext .highlight {
+  color: var(--text);
+}
+header .arrowdown svg {
+  fill: var(--text);
+}
+nav h3 {
+  color: var(--text);
+}
+nav a {
+  color: var(--text);
+}
+nav .active {
+  color: var(--sdarkgreen);
+}
+
+.psection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.psection h3 {
+  font-family: var(--ff);
+  font-size: 50px;
+  font-weight: 500;
+  margin: 30px 0;
+}
+.psection .partners {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

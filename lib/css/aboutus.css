@@ -1,0 +1,113 @@
+header {
+  background-image: url("../assets/header/aboutus\ bg.png")
+}
+
+.fullinfo {
+  width: 100%;
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--pdarkgreen);
+  gap: 30px;
+}
+.fullinfo p {
+  width: 70%;
+  text-align: left;
+  font-size: 28px;
+  color: var(--bg);
+}
+.fullinfo p .bolden {
+  font-weight: 700;
+}
+
+.fullinfo .fullicon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+}
+.fullinfo .fullicon svg {
+  height: 100%;
+}
+
+h4 {
+  font-size: 64px;
+  color: var(--text);
+  margin: 100px 0px;
+  width: 100%;
+  text-align: center  ;
+}
+
+.teamcards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 100px;
+  gap: 100px;
+}
+.teamcards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 600px;
+  border-radius: 50px;
+  background: var(--pdarkgreen);
+}
+.teamcards .card .pfp {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 50px 0px;
+}
+.teamcards .card .pfp img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.teamcards .card .name {
+  font-size: 40px;
+  color: var(--plimegreen);
+}
+.teamcards .card .role {
+  font-size: 35px;
+  color: var(--bg);
+  margin-bottom: 0px;
+}
+.teamcards .card .contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  margin: 50px 0px;
+}
+.teamcards .card .contact .citem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 15px;
+  &:hover .cdetail {
+    color: var(--plimegreen);
+  }
+}
+.teamcards .card .contact .citem .cicon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+
+  & svg {
+    height: 100%;
+  }
+}
+.teamcards .card .contact .citem .cdetail {
+  transition: all 0.25s ease-in-out;
+  font-size: 30px;
+  color: var(--bg);
+}
