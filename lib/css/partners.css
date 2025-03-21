@@ -28,14 +28,50 @@ nav .active {
   flex-direction: column;
 }
 .psection h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--ff);
-  font-size: 50px;
-  font-weight: 500;
-  margin: 30px 0;
+  font-size: 64px;
+  font-weight: 800;
+  margin: 80px 0;
+  height: 70px;
+  overflow: hidden;
+  color: var(--pdarkgreen);
+}
+.psection h3 svg {
+  height: 100%;
+  margin-right: 40px;
+  fill: var(--pdarkgreen);
 }
 .psection .partners {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+.psection .partners .pbox {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 40px;
+}
+.psection .partners .pbox img {
+  height: 100%;
+}
+.psection .altp {
+  flex-direction: column;
+  /* background: var(--altbg); */
+}
+.psection .partners .divider {
+  width: 900px;
+  height: 2px;
+  background: var(--pdarkgreen);
+}
+.psection .partners .extrap {
+  width: 80%;
+  height: 350px;
+  margin: 0px;
 }
