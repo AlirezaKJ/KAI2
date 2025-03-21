@@ -1,3 +1,94 @@
 header {
   background-image: url(../assets/header/contactus\ bg.png);
 }
+.form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: url(../assets/contactus/form\ bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.form .innerbox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(248, 248, 248, 0.75);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100%;
+  margin: 50px;
+  padding: 50px 50px;
+  gap: 25px 50px;
+  border-radius: 50px;
+}
+.form .shortinput {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+.form .shortinput .name {
+  font-size: 64px;
+  color: var(--text);
+}
+.form .shortinput input {
+  outline: unset;
+  border: solid 3px rgba(0, 0, 0, 0);
+  border-radius: 25px;
+  font-size: 64px;
+  padding: 15px;
+  color: var(--pdarkgreen);
+  background: var(--stealgreen);
+  width: 100%; 
+  height: 115px;
+  transition: all 0.25s ease-in-out;
+  &:hover {
+    border: solid 3px var(--pdarkgreen);
+  }
+  &:focus {
+    border: solid 3px var(--pdarkgreen);
+  }
+}
+.form .shortinput textarea {
+  outline: unset;
+  border: solid 3px rgba(0, 0, 0, 0);
+  border-radius: 25px;
+  padding: 15px;
+  color: var(--pdarkgreen);
+  background: var(--stealgreen);
+  font-size: 64px;
+  width: 100%;
+  height: calc( 135px * 5);
+  transition: all 0.25s ease-in-out;
+  &:hover {
+    border: solid 3px var(--pdarkgreen);
+  }
+  &:focus {
+    border: solid 3px var(--pdarkgreen);
+  }
+}
+.form .submitbtn {
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  font-weight: 400;
+  width: 380px;
+  height: 155px;
+  background: var(--pdarkgreen);
+  color: var(--plimegreen);
+  border: solid 4px rgba(0, 0, 0, 0);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  &:hover {
+    border: solid 4px var(--plimegreen);
+    font-weight: 900;
+  }
+}
