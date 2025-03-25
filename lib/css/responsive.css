@@ -1,0 +1,42 @@
+/* ! If the screen size is 600px or less */
+@media only screen and (max-width: 1300px) {
+  nav {
+    gap: 25px;
+  }
+  nav a {
+    font-size: 25px;
+  }
+  footer {
+    height: 700px;
+  }
+  footer .fullicon {
+    width: 70%;
+    height: 20%;
+  }
+  footer .links {
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    flex-wrap: wrap;
+  }
+  footer .links a {
+    /* font-size: 20px; */
+  }
+}
+@media only screen and (max-width: 1000px) {
+  nav a {
+    display: none;
+  }
+  nav .navtitle {
+    display: flex;
+  }
+  nav .burgermenu {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  header .centerstuff {
+    gap: 150px;
+  }
+}

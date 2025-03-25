@@ -8,18 +8,22 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="stylesheet" href="lib/css/main.css">
   <link rel="stylesheet" href="lib/css/partners.css">
+  <link rel="stylesheet" href="lib/css/responsive.css">
+
 </head>
 <body>
   <header>
     <nav>
-      <h3 class="navtitle">KAI-2</h3>
-      <a href="index.html">Home</a>
+      <a href="index.html" class="navtitle">KAI-2</a>
       <a href="aboutus.html">About Us</a>
       <a href="industries.html">Industries</a>
       <a href="projects.html">Projects</a>
       <a href="services.html">Services</a>
-      <a class="active" href="partners.html">Partners</a>
+      <a href="partners.html" class="active">Partners</a>
       <a href="contactus.html">Contact Us</a>
+      <div onclick="toggleNav()" class="burgermenu">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+      </div>
     </nav>
 
     <div class="centerstuff">
@@ -30,6 +34,18 @@
     </div>
     <div onclick="headerscrlto()" class="arrowdown">
       <svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><path d="M64 101.333L32 69.3333L39.4667 61.8666L64 86.2666L88.5333 61.8666L96 69.3333L64 101.333ZM64 69.3333L32 37.3333L39.4667 29.8666L64 54.2666L88.5333 29.8666L96 37.3333L64 69.3333Z"/></svg>
+    </div>
+
+    <div id="fsmenu">
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="industries.html">Industries</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="partners.html">Partners</a>
+        <a href="contactus.html">Contact Us</a>
+      </div>
     </div>
   </header>
 

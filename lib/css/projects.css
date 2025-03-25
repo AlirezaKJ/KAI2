@@ -2,7 +2,7 @@ header {
   background-image: url(../assets/header/projects\ bg.png);
 }
 
-nav h3 {
+nav .navtitle {
   color: var(--text);
 }
 nav a {
