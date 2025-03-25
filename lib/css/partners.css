@@ -20,6 +20,24 @@ nav a {
 nav .active {
   color: var(--sdarkgreen);
 }
+nav .navtitle {
+  color: var(--text);
+}
+nav .burgermenu svg {
+  fill: var(--text);
+}
+nav .burgermenu:hover svg {
+  fill: var(--sdarkgreen) !important;
+}
+nav .open svg {
+  fill: var(--bg);
+}
+nav .open svg:hover {
+  fill: var(--plimegreen) !important;
+}
+.openedmenu nav .navtitle {
+  color: var(--bg);
+}
 
 .psection {
   display: flex;
