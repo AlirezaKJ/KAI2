@@ -19,9 +19,6 @@
     height: 80%;
     flex-wrap: wrap;
   }
-  footer .links a {
-    /* font-size: 20px; */
-  }
 }
 @media only screen and (max-width: 1000px) {
   nav a {
