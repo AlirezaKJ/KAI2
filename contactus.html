@@ -50,31 +50,31 @@
   </header>
 
   <section class="form">
-    <div class="innerbox">
-      <div class="shortinput">
+    <form action="https://formspree.io/f/xblgkpvd" method="POST" class="innerbox">
+      <label class="shortinput">
         <div class="name">Name</div>
-        <input type="text" placeholder="Jonathan Davis">
-      </div>
-      <div class="shortinput">
+        <input type="text" name="name" placeholder="Jonathan Davis">
+      </label>
+      <label class="shortinput">
         <div class="name">Email</div>
-        <input type="text" placeholder="example@gmail.com">
-      </div>
-      <div class="shortinput">
+        <input type="email" name="email" placeholder="example@gmail.com">
+      </label>
+      <label class="shortinput">
         <div class="name">Subject</div>
-        <input type="text" placeholder="The Wind Turbines">
-      </div>
-      <div class="shortinput">
+        <input type="text" name="subject" placeholder="The Wind Turbines">
+      </label>
+      <label class="shortinput">
         <div class="name">Phone</div>
         <input type="tel" placeholder="0410123456">
-      </div>
-      <div class="shortinput">
+      </label>
+      <label class="shortinput">
         <div class="name">Message</div>
         <textarea name="message" id="messagebox" placeholder="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, nihil enim veniam ducimus quia sapiente commodi dignissimos recusandae reiciendis repellat! Possimus expedita laborum, doloremque nulla perferendis libero necessitatibus iusto adipisci?"></textarea>
-      </div>
-      <div class="submitbtn">
+      </label>
+      <button type="submit" class="submitbtn">
         Submit
-      </div>
-    </div>
+      </button>
+    </form>
   </section>
 
   <footer>
@@ -93,5 +93,6 @@
   </footer>
 
   <script src="lib/js/main.js"></script>
+  <script src="lib/js/contactus.js"></script>
 </body>
 </html>
