@@ -75,3 +75,32 @@ nav .open svg:hover {
     color: var(--bg);
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .projects .project {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .projects .project .infobox {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+  }
+  .projects .project .infobox h4 {
+    font-size: 64px;
+  }
+  .projects .project .infobox h5 {
+    font-size: 42px;
+    margin: 0px;
+  }
+  .projects .project .infobox p {
+    font-size: 17px;
+  }
+  .projects .alt {
+    flex-direction: column-reverse;
+  }
+}
