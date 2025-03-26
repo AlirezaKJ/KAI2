@@ -33,19 +33,19 @@ header {
   width: 100%;
 }
 .form .shortinput .name {
-  font-size: 64px;
+  font-size: 36px;
   color: var(--text);
 }
 .form .shortinput input {
   outline: unset;
   border: solid 3px rgba(0, 0, 0, 0);
   border-radius: 25px;
-  font-size: 64px;
+  font-size: 36px;
   padding: 15px;
   color: var(--pdarkgreen);
   background: var(--stealgreen);
   width: 100%; 
-  height: 115px;
+  height: 85px;
   transition: all 0.25s ease-in-out;
   &:hover {
     border: solid 3px var(--pdarkgreen);
@@ -61,7 +61,7 @@ header {
   padding: 15px;
   color: var(--pdarkgreen);
   background: var(--stealgreen);
-  font-size: 64px;
+  font-size: 46px;
   width: 100%;
   height: calc( 135px * 5);
   transition: all 0.25s ease-in-out;
