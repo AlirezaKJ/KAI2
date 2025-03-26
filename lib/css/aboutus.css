@@ -41,6 +41,7 @@ h4 {
 }
 
 .teamcards {
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;

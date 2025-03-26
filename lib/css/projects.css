@@ -31,6 +31,7 @@ nav .open svg:hover {
   width: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .projects .project {
   width: 100%;
@@ -54,11 +55,13 @@ nav .open svg:hover {
   backdrop-filter: blur(10px);
 }
 .projects .project .infobox h4 {
+  text-align: center;
   font-family: var(--ff);
   font-size: 96px; 
   font-weight: 900;
 }
 .projects .project .infobox h5 {
+  text-align: center;
   font-family: var(--ff);
   font-size: 50px;
   font-weight: 700;
