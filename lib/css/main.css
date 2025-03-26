@@ -175,6 +175,7 @@ header #fsmenu .links {
   gap: 20px;
   height: 100%;
   padding: 30px;
+  margin-bottom: 10px;
 }
 header #fsmenu .links a {
   color: var(--bg);
