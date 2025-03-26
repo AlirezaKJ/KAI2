@@ -62,3 +62,26 @@ header {
   backdrop-filter: blur(5px);
   transition: all 0.25s ease-in-out;
 }
+
+
+/* ! RESPONSIVE GUIDES */
+@media only screen and (max-width: 900px) {
+  .quickinfo {
+    padding: 0px 0px;
+  }
+  .quickinfo p {
+    width: 90%;
+  }
+  .quickinfo .icons {
+    gap: 50px;
+    height: 150px;
+    overflow: hidden;
+  }
+  .quickinfo .smallindustry {
+    flex-direction: column;
+  }
+  .quickinfo .smallindustry .industryitem {
+    width: 100%;
+    margin: 0px;
+  }
+}
