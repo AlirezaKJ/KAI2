@@ -26,6 +26,32 @@ header {
   width: 60px;
   fill: var(--text);
 }
+
+
+.rollingbrands {
+  padding: 60px 0px;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+}
+.rollingbrands .iconslider {
+  display: inline-block;
+  animation: 20s slide infinite linear;
+}
+.rollingbrands .iconslider img {
+  height: 100px;
+  margin: 0px 10px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 .quickinfo .smallindustry {
   width: 100%;
   display: flex;
@@ -76,6 +102,13 @@ header {
     gap: 50px;
     height: 150px;
     overflow: hidden;
+  }
+  .rollingbrands {
+    padding: 20px 0px;
+  }
+  .rollingbrands .iconslider img {
+    height: 60px;
+    margin: 0px 10px;
   }
   .quickinfo .smallindustry {
     flex-direction: column;
