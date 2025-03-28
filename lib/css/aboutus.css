@@ -135,12 +135,13 @@ h4 {
     margin: 0px;
   }
   .teamcards .card {
+    width: 100%;
     border-radius: 0px;
   }
   .teamcards .card:nth-child(even) {
-    background: var(--plimegreen);
+    background: var(--sdarkgreen);
   }
-  .teamcards .card:nth-child(even) .name {
+  /* .teamcards .card:nth-child(even) .name {
     color: var(--pdarkgreen);
   }
   .teamcards .card:nth-child(even) .role {
@@ -151,5 +152,5 @@ h4 {
   }
   .teamcards .card:nth-child(even) .contact .citem .cdetail {
     color: var(--sdarkgreenalt);
-  }
+  } */
 }
