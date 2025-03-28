@@ -121,6 +121,16 @@ header .centerstuff {
   flex-direction: column;
   gap: 40px;
 }
+header .centerstuff .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+}
+header .centerstuff .icon svg {
+  /* border: solid 5px var(--plimegreen); */
+  border-radius: 50%;
+}
 header .centerstuff .headertext {
   text-align: center;
   font-size: 60px;
