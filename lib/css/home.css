@@ -29,14 +29,38 @@ header {
 
 
 .rollingbrands {
+  margin-bottom: 60px;
   padding: 60px 0px;
   overflow: hidden;
   width: 100%;
   white-space: nowrap;
 }
+.rollingbrands:before,
+.rollingbrands:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.rollingbrands:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.rollingbrands:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.rollingbrands:hover .iconslider {
+  animation-play-state: paused;
+}
 .rollingbrands .iconslider {
   display: inline-block;
-  animation: 20s slide infinite linear;
+  animation: 25s slide infinite linear;
 }
 .rollingbrands .iconslider img {
   height: 100px;
@@ -109,6 +133,10 @@ header {
   .rollingbrands .iconslider img {
     height: 60px;
     margin: 0px 10px;
+  }
+  .rollingbrands:before,
+  .rollingbrands:after {
+    display: none;
   }
   .quickinfo .smallindustry {
     flex-direction: column;
