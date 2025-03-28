@@ -138,7 +138,7 @@ header .arrowdown {
   position: absolute;
   bottom: 0;
   margin-bottom: 20px;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out !important;
   &:hover {
     scale: 1.1;
   }
