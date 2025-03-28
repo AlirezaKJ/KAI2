@@ -66,6 +66,9 @@ nav .navtitle {
   z-index: 2;
   transition: all 0.3s ease-in-out;
 }
+nav .navtitle span {
+  transform: translateY(-5px);
+}
 nav a {
   display: flex;
   align-items: center;
@@ -226,9 +229,9 @@ header #fsmenu .links a {
   background: var(--pdarkgreen);
   color: var(--plimegreen);
   transition: all 0.25s ease-in-out;
-  border: solid 2px rgba(0, 0, 0, 0);
+  border: solid 3px rgba(0, 0, 0, 0);
   &:hover {
-    border: solid 2px var(--plimegreen);
+    border: solid 3px var(--plimegreen);
   }
 }
 

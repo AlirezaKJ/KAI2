@@ -49,14 +49,14 @@ h4 {
   flex-wrap: wrap;
   width: 100%;
   margin-bottom: 100px;
-  gap: 100px;
+  gap: 4vw;
 }
 .teamcards .card {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 600px;
+  width: 28vw;
   border-radius: 50px;
   background: var(--pdarkgreen);
 }
