@@ -1,101 +1,120 @@
-/* contactus.css */
-
-/* فرم زمینه */
+header {
+  background-image: url(../assets/header/contactus\ bg.png);
+}
 .form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: url(../assets/contactus/form\ bg.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.form .innerbox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(248, 248, 248, 0.75);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100%;
+  margin: 50px;
+  padding: 50px 50px;
+  gap: 25px 50px;
+  border-radius: 50px;
+}
+.form .shortinput {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+.form .shortinput .name {
+  font-size: 36px;
+  color: var(--text);
+}
+.form .shortinput input {
+  outline: unset;
+  border: solid 3px rgba(0, 0, 0, 0);
+  border-radius: 25px;
+  font-size: 36px;
+  padding: 15px;
+  color: var(--pdarkgreen);
+  background: var(--stealgreen);
+  width: 100%; 
+  height: 85px;
+  transition: all 0.25s ease-in-out;
+  &:hover {
+    border: solid 3px var(--pdarkgreen);
+  }
+  &:focus {
+    border: solid 3px var(--pdarkgreen);
+  }
+}
+.form .shortinput textarea {
+  outline: unset;
+  border: solid 3px rgba(0, 0, 0, 0);
+  border-radius: 25px;
+  padding: 15px;
+  color: var(--pdarkgreen);
+  background: var(--stealgreen);
+  font-size: 46px;
+  width: 100%;
+  height: calc( 135px * 5);
+  transition: all 0.25s ease-in-out;
+  &:hover {
+    border: solid 3px var(--pdarkgreen);
+  }
+  &:focus {
+    border: solid 3px var(--pdarkgreen);
+  }
+}
+.form .submitbtn {
+  margin: 10px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
-  background: url(../assets/contactus/form bg.webp) no-repeat center/cover;
-  min-height: 100vh;
-}
-
-/* ظرف فرم بهبود یافته */
-.form .innerbox {
-  background: rgba(248, 248, 248, 0.9);
-  backdrop-filter: blur(8px);
-  border-radius: 20px;
-  padding: 2rem;
-  max-width: 600px;
+  font-size: 64px;
+  font-weight: 400;
   width: 100%;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin: 1rem;
-}
-
-/* استایل برای هر فیلد فرم */
-.form .shortinput {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.form .shortinput .name {
-  font-size: 1.5rem;
-  color: var(--text);
-  font-weight: bold;
-}
-
-/* استایل اینپوت‌ها و تکست اریا */
-.form .shortinput input,
-.form .shortinput textarea {
-  padding: 0.75rem;
-  font-size: 1rem;
-  border: 2px solid transparent;
-  border-radius: 10px;
-  background: var(--stealgreen);
-  color: var(--pdarkgreen);
-  transition: border 0.3s ease;
-}
-
-.form .shortinput input:hover,
-.form .shortinput textarea:hover,
-.form .shortinput input:focus,
-.form .shortinput textarea:focus {
-  border: 2px solid var(--pdarkgreen);
-  outline: none;
-}
-
-/* تکست اریا با قابلیت تغییر اندازه عمودی */
-.form .shortinput textarea {
-  resize: vertical;
-  min-height: 150px;
-}
-
-/* استایل دکمه ارسال */
-.form .submitbtn {
+  height: 155px;
   background: var(--pdarkgreen);
   color: var(--plimegreen);
-  font-size: 1.75rem;
-  padding: 1rem;
-  border: 2px solid transparent;
-  border-radius: 10px;
+  border: solid 4px rgba(0, 0, 0, 0);
+  border-radius: 25px;
   cursor: pointer;
-  transition: background 0.3s ease, border 0.3s ease;
+  transition: all 0.25s ease-in-out;
+  &:hover {
+    border: solid 4px var(--plimegreen);
+    font-weight: 900;
+  }
 }
 
-.form .submitbtn:hover {
-  background: var(--sdarkgreen);
-  border: 2px solid var(--plimegreen);
-}
-
-/* واکنشگرایی برای نمایش‌های کوچکتر */
 @media only screen and (max-width: 800px) {
   .form .innerbox {
-    padding: 1rem;
-    border-radius: 0;
-    max-width: 100%;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 10px;
+    gap: 10px;
   }
-  .form .shortinput .name {
-    font-size: 1.25rem;
+  .form .innerbox .name {
+    font-size: 36px;
   }
-  .form .shortinput input,
-  .form .shortinput textarea {
-    font-size: 0.9rem;
+  .form .innerbox input {
+    border-radius: 15px;
+    font-size: 32px;
+    height: unset;
   }
-  .form .submitbtn {
-    font-size: 1.5rem;
+  .form .innerbox textarea {
+    border-radius: 15px;
+    font-size: 32px;
+  }
+  .form .innerbox .submitbtn {
+    height: 110px;
+    font-size: 40px;
+    border-radius: 15px;
   }
 }
