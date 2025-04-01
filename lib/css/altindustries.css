@@ -1,0 +1,100 @@
+header {
+  background-image: url("../assets/header/indsutries\ bg.webp")
+}
+
+.industries {
+  background: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 100px;
+  padding: 100px 0;
+}
+
+.industries .industryitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 600px;
+}
+
+.industries .industryitem .detailbox {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background: var(--stealgreen); */
+  color: var(--stealgreen);
+}
+.industries .industryitem .alt {
+  /* background: var(--pdarkgreen); */
+  color: var(--plimegreen);
+}
+.industries .industryitem .detailbox h3 {
+  font-size: 60px;
+  font-weight: 900;
+  font-family: var(--ff);
+  text-align: center;
+  width: 90%;
+}
+.industries .industryitem .detailbox p {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: var(--ff);
+  text-align: center;
+  width: 90%;
+}
+.industries .industryitem .imgbox {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  & img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .industries {
+    padding: 0;
+  }
+  .industries .industryitem {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .industries .altindustryitem {
+    width: 100%;
+    flex-direction: column;
+  }
+  .industries .industryitem .imgbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+  }
+  .industries .industryitem .detailbox {
+    width: 100%;
+    height: 30%;
+  }
+  .industries .industryitem .detailbox h3 {
+    font-size: 35px;
+  }
+
+}
+@media only screen and (max-width: 1000px) {
+  .industries .industryitem .detailbox h3 {
+    font-size: 45px;
+  }
+}
