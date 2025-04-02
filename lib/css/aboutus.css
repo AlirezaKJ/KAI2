@@ -26,18 +26,45 @@ header {
   text-align: left;
   font-size: 28px;
   color: var(--bg);
-  text-align: justify;
-  text-justify: inter-word;
+  
 }
 .fullinfo p .bolden {
-  font-weight: 700;
+  font-weight: 800;
+  font-size: 32px;
 }
 .fullinfo ul {
-  width: 60%;
+  width: 65%;
+  list-style-type: disc;
+  list-style-position: inside;
 }
 .fullinfo ul li {
+  width: 100%;
   font-size: 24px;
+  margin: 16px 0px;
   color: var(--bg);
+  padding: 0 20px;
+}
+.fullinfo .iandinfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45%;
+  gap: 20px;
+}
+.fullinfo .iandinfo .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 60px;
+  & svg {
+    height: 100%;
+    fill: var(--bg);
+  }
+}
+.fullinfo .iandinfo p {
+  font-size: 26px;
+  width: 100%;
 }
 
 .fullinfo .fullicon {
@@ -64,7 +91,7 @@ h4 {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 80%;
+  width: 90%;
   padding-bottom: 100px;
   gap: 100px;
   background: var(--bg);
@@ -137,6 +164,85 @@ h4 {
   color: var(--bg);
 }
 
+.timeline-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--text);
+  width: 100%;
+  min-height: 100vh;
+}
+.timeline-section h2 {
+  font-size: 64px;
+  color: var(--bg);
+  margin: 60px;
+}
+
+.timeline-section .timeline {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-section .timeline-content {
+  background: var(--pdarkgreen);
+  box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+  border-radius: 5px;
+  color: var(--bg);
+  padding: 60px 50px;
+  transition: 0.4s ease;
+  overflow-wrap: break-word !important;
+  border-radius: 6px;
+  margin: 0px 20px 20px 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.timeline-section .timeline-content h3 {
+  font-size: 46px;
+}
+.timeline-section .timeline-content p {
+  font-size: 24px;
+}
+
+/* Apply on laptop and pc view */
+@media screen and (min-width: 768px) {
+  .timeline-section .timeline {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    width: 65%;
+    padding-bottom: 50px;
+  }
+  .timeline-section .timeline-middle {
+    position: relative; 
+    /* background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387); */
+    background: var(--plimegreen);
+    width: 3px;
+    height: 100%;
+  }
+  .timeline-section .main-middle {
+    opacity: 0;
+  }
+  .timeline-section .timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    /* background: linear-gradient(45deg, #F27121, #E94057, #8A2387); */
+    background: var(--plimegreen);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+/* Apply on mobile and phones view */
 @media only screen and (max-width: 900px) {
   .fullinfo {
     padding: 20px 0px;
@@ -149,11 +255,26 @@ h4 {
     font-size: 40px;
     white-space: nowrap;
   }
+  .fullinfo ul {
+    width: 90%;
+  }
+  .fullinfo ul li {
+    padding: 0px;
+  }
+  .fullinfo .iandinfo {
+    flex-direction: column;
+    width: 95%;
+  }
+
   .teamcards {
+    background: var(--text);
     gap: 0px;
     margin: 0px;
     padding-bottom: 0px;
     width: 100%;
+  }
+  .teamcards h4 {
+    color: var(--bg);
   }
   .teamcards .card {
     width: 100%;
