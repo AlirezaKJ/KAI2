@@ -9,7 +9,7 @@ header {
   flex-direction: column;
   padding: 100px 0px;
   background: var(--pdarkgreen);
-  color: var(--altbg);
+  color: var(--bg);
 }
 .quickinfo p {
   font-size: 28px;

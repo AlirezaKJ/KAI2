@@ -2,28 +2,37 @@ header {
   background-image: url(../assets/header/contactus\ bg.png);
 }
 .form {
+  width: 100%;
+  overflow: hidden;
   display: flex;
-  align-items: flex-start;
   justify-content: center;
-  background-image: url(../assets/contactus/form\ bg.webp);
+  background-image: url(../assets/contactus/form\ bg2.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.form .bdbox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(15px);
 }
 .form .innerbox {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  background-color: rgba(248, 248, 248, 0.75);
-  backdrop-filter: blur(10px);
+  background-color: hsla(0, 0%, 0%, 0.75);
   max-width: 100%;
-  min-width: 800px;
+  min-width: 1500px;
   height: 100%;
   margin: 50px;
   padding: 50px 50px;
   gap: 25px 50px;
   border-radius: 50px;
+  backdrop-filter: blur(15px);
 }
 .form .shortinput {
   display: flex;
@@ -35,7 +44,7 @@ header {
 }
 .form .shortinput .name {
   font-size: 36px;
-  color: var(--text);
+  color: var(--bg);
 }
 .form .shortinput input {
   outline: unset;
@@ -43,16 +52,19 @@ header {
   border-radius: 25px;
   font-size: 36px;
   padding: 15px;
-  color: var(--pdarkgreen);
-  background: var(--stealgreen);
+  color: var(--bg);
+  background: var(--sdarkgreenalt);
   width: 100%; 
   height: 85px;
   transition: all 0.25s ease-in-out;
   &:hover {
-    border: solid 3px var(--pdarkgreen);
+    border: solid 3px var(--sdarkgreen);
   }
   &:focus {
-    border: solid 3px var(--pdarkgreen);
+    border: solid 3px var(--sdarkgreen);
+  }
+  &::placeholder {
+    color: var(--altbg);
   }
 }
 .form .shortinput textarea {
@@ -60,17 +72,20 @@ header {
   border: solid 3px rgba(0, 0, 0, 0);
   border-radius: 25px;
   padding: 15px;
-  color: var(--pdarkgreen);
-  background: var(--stealgreen);
+  color: var(--bg);
+  background: var(--sdarkgreenalt);
   font-size: 36px;
   width: 100%;
   height: calc( 135px * 5);
   transition: all 0.25s ease-in-out;
   &:hover {
-    border: solid 3px var(--pdarkgreen);
+    border: solid 3px var(--sdarkgreen);
   }
   &:focus {
-    border: solid 3px var(--pdarkgreen);
+    border: solid 3px var(--sdarkgreen);
+  }
+  &::placeholder {
+    color: var(--altbg);
   }
 }
 .form .g-recaptcha {
@@ -108,9 +123,8 @@ header {
     margin: 0px;
     padding: 10px;
     gap: 10px;
-    width: 100%;
+    width: 100% !important;
     min-width: 0px !important;
-    max-width: none;
   }
   .form .innerbox .name {
     font-size: 36px;
