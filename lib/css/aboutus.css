@@ -22,13 +22,22 @@ header {
   overflow: hidden;
 }
 .fullinfo p {
-  width: 70%;
+  width: 65%;
   text-align: left;
   font-size: 28px;
   color: var(--bg);
+  text-align: justify;
+  text-justify: inter-word;
 }
 .fullinfo p .bolden {
   font-weight: 700;
+}
+.fullinfo ul {
+  width: 60%;
+}
+.fullinfo ul li {
+  font-size: 24px;
+  color: var(--bg);
 }
 
 .fullinfo .fullicon {
