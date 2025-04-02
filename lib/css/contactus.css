@@ -73,6 +73,14 @@ header {
     border: solid 3px var(--pdarkgreen);
   }
 }
+.form .g-recaptcha {
+  height: 100px;
+  width: 100%;
+  overflow: hidden !important;
+}
+.form .g-recaptcha * {
+  overflow: hidden !important;
+}
 .form .submitbtn {
   margin: 10px 0px;
   display: flex;
