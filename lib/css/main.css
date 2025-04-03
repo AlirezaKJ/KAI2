@@ -214,6 +214,16 @@ header #fsmenu .links a {
   background-repeat: no-repeat;
   background-image: url(../assets/footer/contactusbg.webp);
 }
+.contactus .blurrer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  /* backdrop-filter: blur(5px); */
+}
 .contactus p {
   text-align: center;
   font-size: 35px;
