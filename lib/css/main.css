@@ -265,11 +265,11 @@ footer .links {
   align-items: flex-start;
   justify-content: center;
   height: 50%;
-  gap: 50px;
+  gap: 30px;
 }
 footer .links a {
   margin-top: 50px;
-  font-size: 30px;
+  font-size: 28px;
   transition: all 0.25s ease-in-out;
   &:hover {
     color: var(--plimegreen);

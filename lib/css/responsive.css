@@ -6,6 +6,17 @@
   nav a {
     font-size: 25px;
   }
+}
+@media only screen and (max-width: 1000px) {
+  nav a {
+    display: none;
+  }
+  nav .navtitle {
+    display: flex;
+  }
+  nav .burgermenu {
+    display: flex;
+  }
   footer {
     height: 700px;
   }
@@ -18,17 +29,6 @@
     align-items: center;
     height: 80%;
     flex-wrap: wrap;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  nav a {
-    display: none;
-  }
-  nav .navtitle {
-    display: flex;
-  }
-  nav .burgermenu {
-    display: flex;
   }
 }
 
