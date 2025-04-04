@@ -254,7 +254,7 @@ footer {
   flex-direction: column;
   height: 400px;
   width: 100%;
-  background: var(--text);
+  background: var(--alttext);
   color: var(--bg);
   overflow: hidden;
 }

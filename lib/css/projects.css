@@ -44,12 +44,13 @@ nav .open svg:hover {
 }
 .projects .project .infobox {
   width: 40%;
-  background-color: rgba(218, 218, 218, 0.8);
+  background-color: rgba(18, 56, 0, 0.8);
+  background-color: rgba(11, 77, 58, 0.8);
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  color: var(--white);
+  color: var(--bg);
   z-index: 2;
   padding: 50px;
   backdrop-filter: blur(10px);
@@ -70,6 +71,8 @@ nav .open svg:hover {
 .projects .project .infobox p {
   font-size: 32px;
   font-weight: 400;
+  text-align: justify;
+  text-justify: newspaper;
 }
 .projects .alt {
   justify-content: flex-end;
@@ -79,7 +82,7 @@ nav .open svg:hover {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .projects .project {
     flex-direction: column;
     height: 100vh;
@@ -88,20 +91,20 @@ nav .open svg:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     padding: 10px;
     width: 100%;
     height: auto;
   }
   .projects .project .infobox h4 {
-    font-size: 64px;
+    font-size: 46px;
   }
   .projects .project .infobox h5 {
-    font-size: 42px;
+    font-size: 32px;
     margin: 0px;
   }
   .projects .project .infobox p {
-    font-size: 17px;
+    font-size: 20px;
   }
   .projects .alt {
     flex-direction: column-reverse;
