@@ -1,8 +1,8 @@
 header {
-  background-image: url(../assets/header/partners\ bg.webp);
+  background-image: url(../assets/header/partners_bg_alt.webp);
 }
 
-header .centerstuff .icon svg {
+/* header .centerstuff .icon svg {
   fill: var(--text);
 }
 header .centerstuff .headertext .highlight {
@@ -37,7 +37,7 @@ nav .open svg:hover {
 }
 .openedmenu nav .navtitle {
   color: var(--bg);
-}
+} */
 
 .psection {
   overflow: hidden;

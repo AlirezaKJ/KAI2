@@ -139,7 +139,7 @@ header .centerstuff .icon svg {
 header .centerstuff .headertext {
   text-align: center;
   font-size: 60px;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--bg);
 }
 header .centerstuff .headertext .highlight {
