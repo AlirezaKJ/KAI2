@@ -37,6 +37,7 @@ header {
   font-size: 32px;
 }
 .services ul {
+  overflow: hidden;
   margin: 10px;
   width: 55%;
   list-style-type: disc;
