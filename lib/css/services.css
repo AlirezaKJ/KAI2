@@ -1,3 +1,78 @@
 header {
   background-image: url("../assets/header/services_bg_greened.webp");
 }
+
+.services {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--alttext);
+  color: white;
+  padding: 100px 0px;
+}
+.services h3 {
+  width: 95%;
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  text-align: center;
+  color: var(--plimegreen);
+}
+.services h4 {
+  width: 60%;
+  font-size: 32px;
+  font-weight: 800;
+  margin: 20px;
+  color: var(--plimegreen);
+}
+.services p {
+  width: 55%;
+  font-size: 28px;
+  margin: 10px;
+}
+.services .widep {
+  width: 65%;
+  font-size: 32px;
+}
+.services ul {
+  margin: 10px;
+  width: 55%;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.services ul li {
+  width: 100%;
+  font-size: 24px;
+  margin: 8px 0px;
+}
+
+@media only screen and (max-width: 900px) {
+  .services {
+    padding: 50px 0px;
+  }
+  .services h3 {
+    width: 95%;
+    text-align: left;
+    font-size: 30px;
+  }
+  .services h4 {
+    width: 95%;
+    font-size: 27px;
+  }
+  .services .widep {
+    width: 95%;
+    font-size: 24px;
+  }
+  .services p {
+    width: 95%;
+    font-size: 24px;
+  }
+  .services ul {
+    width: 95%;
+    & li {
+      font-size: 21px;
+    }
+  }
+}

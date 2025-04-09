@@ -49,6 +49,11 @@ h1, h2, h3 {
   font-family: var(--ffh);
 }
 
+.bolden {
+  font-weight: 800;
+  font-size: 32px;
+}
+
 nav {
   position: absolute;
   top: 0px;
