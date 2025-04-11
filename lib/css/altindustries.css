@@ -99,8 +99,8 @@ header {
   }
   .industries .industryitem .detailbox p {
     width: 95%;
-    text-align: justify;
-    text-justify: inter-word;
+    /* text-align: justify; */
+    /* text-justify: inter-word; */
   }
 
 }

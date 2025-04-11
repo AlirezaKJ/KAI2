@@ -71,8 +71,7 @@ nav .open svg:hover {
 .projects .project .infobox p {
   font-size: 32px;
   font-weight: 400;
-  text-align: justify;
-  text-justify: newspaper;
+  text-align: left;
 }
 .projects .alt {
   justify-content: flex-end;

@@ -13,13 +13,13 @@
 <body>
   <header>
     <nav>
-      <a data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-delay="0" href="index.html" class="navtitle">KAI<span>&#178</span></a>
-      <a data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-delay="0" href="aboutus.html">About Us</a>
-      <a data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-delay="0" href="industries.html">Industries</a>
-      <a data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-delay="0" href="projects.html">Projects</a>
-      <a data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-delay="0" href="services.html">Services</a>
-      <a data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-delay="0" href="partners.html">Partners</a>
-      <a data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-delay="0" href="contactus.html">Contact Us</a>
+      <a onmouseover="headerfullbg()" onmouseout="headerclearms()" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-delay="0" href="index.html" class="navtitle">KAI<span>&#178</span></a>
+      <a onmouseover="headerfullplg()" onmouseout="headerclearms()" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-delay="0" href="aboutus.html">About Us</a>
+      <a onmouseover="headeronbotm()" onmouseout="headerclearms()" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-delay="0" href="industries.html">Industries</a>
+      <a onmouseover="headeronleftm()" onmouseout="headerclearms()" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-delay="0" href="projects.html">Projects</a>
+      <a onmouseover="headeronrightm()" onmouseout="headerclearms()" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-delay="0" href="services.html">Services</a>
+      <a onmouseover="header3mw()" onmouseout="headerclearms()" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-delay="0" href="partners.html">Partners</a>
+      <a onmouseover="headerontopm()" onmouseout="headerclearms()" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-delay="0" href="contactus.html">Contact Us</a>
       <div data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-delay="0" onclick="toggleNav()" class="burgermenu">
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
       </div>
@@ -27,7 +27,15 @@
 
     <div class="centerstuff">
       <div class="icon">
-        <svg viewBox="0 0 840 840" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_34_1591)"><path d="M419.873 839.947C468.288 839.947 514.631 831.659 557.96 816.588L322.854 581.482C313.624 572.251 301.567 567.353 288.38 567.353C275.193 567.353 263.136 572.439 253.905 581.482L120.905 714.482C143.888 737.842 169.697 758.565 197.578 775.896L223.575 790.967C282.163 822.239 349.04 839.947 419.873 839.947Z" fill="#1A3E35"/><path d="M653.66 313.403C634.633 294.376 603.738 294.376 584.899 313.403L485.808 412.494L751.055 677.742C792.312 624.805 821.135 561.696 833.192 492.935L653.66 313.403Z" fill="#4BB292"/><path d="M717.335 716.185L250.703 249.553C231.676 230.526 200.781 230.526 181.754 249.553L0.337891 430.968C2.78691 522.901 34.8125 607.674 87.3722 675.87L217.924 545.319C236.762 526.48 261.818 516.119 288.38 516.119C314.942 516.119 340.186 526.48 358.836 545.319L608.071 794.553C607.129 795.307 605.999 796.06 604.868 797.002C646.69 776.28 684.744 748.964 717.335 716.185Z" fill="#266F5B"/><path d="M419.873 0.312012C210.953 0.312012 37.261 153.847 5.23535 353.912L145.771 213.376C184.579 174.569 247.876 174.569 286.684 213.376L449.638 376.33L548.729 277.239C567.567 258.401 592.623 248.228 619.185 248.228C645.747 248.228 670.991 258.589 689.641 277.239L839.597 425.122C839.785 185.684 651.399 0.312012 419.873 0.312012Z" fill="#AEE37B"/></g><defs><clipPath id="clip0_34_1591"><rect width="839.448" height="839.636" fill="white" transform="translate(0.337891 0.312012)"/></clipPath></defs></svg>        
+        <svg viewBox="0 0 840 840" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_34_1591)">
+            <path id="mbot" fill="#1A3E35" d="M419.873 839.947C468.288 839.947 514.631 831.659 557.96 816.588L322.854 581.482C313.624 572.251 301.567 567.353 288.38 567.353C275.193 567.353 263.136 572.439 253.905 581.482L120.905 714.482C143.888 737.842 169.697 758.565 197.578 775.896L223.575 790.967C282.163 822.239 349.04 839.947 419.873 839.947Z"/>
+            <path id="mright" fill="#4BB292" d="M653.66 313.403C634.633 294.376 603.738 294.376 584.899 313.403L485.808 412.494L751.055 677.742C792.312 624.805 821.135 561.696 833.192 492.935L653.66 313.403Z"/>
+            <path id="mleft" fill="#266F5B" d="M717.335 716.185L250.703 249.553C231.676 230.526 200.781 230.526 181.754 249.553L0.337891 430.968C2.78691 522.901 34.8125 607.674 87.3722 675.87L217.924 545.319C236.762 526.48 261.818 516.119 288.38 516.119C314.942 516.119 340.186 526.48 358.836 545.319L608.071 794.553C607.129 795.307 605.999 796.06 604.868 797.002C646.69 776.28 684.744 748.964 717.335 716.185Z"/>
+            <path id="mtop" fill="#AEE37B" d="M419.873 0.312012C210.953 0.312012 37.261 153.847 5.23535 353.912L145.771 213.376C184.579 174.569 247.876 174.569 286.684 213.376L449.638 376.33L548.729 277.239C567.567 258.401 592.623 248.228 619.185 248.228C645.747 248.228 670.991 258.589 689.641 277.239L839.597 425.122C839.785 185.684 651.399 0.312012 419.873 0.312012Z"/>
+          </g>
+          <defs><clipPath id="clip0_34_1591"><rect width="839.448" height="839.636" fill="white" transform="translate(0.337891 0.312012)"/></clipPath></defs>
+        </svg>
       </div>
       <div class="headertext"><span class="highlight">Connect</span> To Create</div>
     </div>
@@ -124,6 +132,7 @@
         <a href="https://sfs.org.au/"><img src="lib/assets/partners/brands/southern farming system.png" alt="southern farming system"></a>
         <a href="https://www.industry.gov.au/"><img src="lib/assets/partners/brands/government.png" alt="australian government"></a>
       </div>
+
     </div>
 
     <div class="smallindustry">

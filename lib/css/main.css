@@ -142,6 +142,32 @@ header .centerstuff .icon svg {
   /* border: solid 5px var(--plimegreen); */
   border-radius: 50%;
 }
+
+header .centerstuff .icon svg path {
+  transition: all 0.25s ease-in-out;
+}
+header .centerstuff .icon svg .fadep {
+  fill: rgba(0, 0, 0, 0);
+}
+header .centerstuff .icon svg .mboton {
+  fill: var(--bg) !important;
+}
+header .centerstuff .icon svg .mlefton {
+  fill: var(--bg) !important;
+}
+header .centerstuff .icon svg .mrighton {
+  fill: var(--bg) !important;
+}
+header .centerstuff .icon svg .mtopon {
+  fill: var(--bg) !important;
+}
+header .centerstuff .icon svg .headerfullplg {
+  fill: var(--plimegreen) !important;
+}
+header .centerstuff .icon svg .header3mw {
+  fill: var(--bg) !important;
+}
+
 header .centerstuff .headertext {
   text-align: center;
   font-size: 60px;
