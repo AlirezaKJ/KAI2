@@ -41,6 +41,7 @@ header {
   font-family: var(--ff);
   text-align: center;
   width: 90%;
+  overflow: hidden;
 }
 .industries .industryitem .detailbox p {
   font-size: 24px;
@@ -48,6 +49,7 @@ header {
   font-family: var(--ff);
   text-align: center;
   width: 90%;
+  overflow: hidden;
 }
 .industries .industryitem .imgbox {
   width: 60%;
@@ -67,14 +69,18 @@ header {
 @media only screen and (max-width: 800px) {
   .industries {
     padding: 0;
+    gap: 0px;
   }
   .industries .industryitem {
     width: 100%;
     flex-direction: column-reverse;
+    height: 900px;
   }
   .industries .altindustryitem {
     width: 100%;
     flex-direction: column;
+    height: 900px;
+    
   }
   .industries .industryitem .imgbox {
     display: flex;
@@ -86,10 +92,15 @@ header {
   }
   .industries .industryitem .detailbox {
     width: 100%;
-    height: 30%;
+    gap: 40px;
   }
   .industries .industryitem .detailbox h3 {
     font-size: 35px;
+  }
+  .industries .industryitem .detailbox p {
+    width: 95%;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
 }
