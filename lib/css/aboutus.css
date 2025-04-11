@@ -18,7 +18,6 @@ header {
   justify-content: center;
   flex-direction: column;
   background: var(--pdarkgreen);
-  gap: 30px;
   overflow: hidden;
 }
 .fullinfo p {
@@ -26,9 +25,10 @@ header {
   text-align: left;
   font-size: 28px;
   color: var(--bg);
-  
+  padding: 15px;
 }
 .fullinfo ul {
+  padding: 15px;
   width: 65%;
   list-style-type: disc;
   list-style-position: inside;
@@ -46,6 +46,7 @@ header {
   justify-content: flex-start;
   width: 45%;
   gap: 20px;
+  padding: 20px;
 }
 .fullinfo .iandinfo .icon {
   display: flex;
@@ -67,10 +68,42 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 75px;
+  height: 200px;
+  gap: 20px;
 }
-.fullinfo .fullicon svg {
-  height: 100%;
+.fullinfo .fullicon #icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  & svg {
+    height: 100%;
+  }
+}
+.fullinfo .fullicon #icon svg path {
+  transition: all 0.25s ease-in-out;
+}
+.fullinfo .fullicon #icon svg .fadep {
+  fill: rgba(0, 0, 0, 0);
+}
+.fullinfo .fullicon #icon svg .mboton {
+  fill: var(--bg) !important;
+}
+.fullinfo .fullicon #icon svg .mlefton {
+  fill: var(--bg) !important;
+}
+.fullinfo .fullicon #icon svg .mrighton {
+  fill: var(--bg) !important;
+}
+.fullinfo .fullicon #icon svg .mtopon {
+  fill: var(--bg) !important;
+}
+
+.fullinfo .fullicon .text {
+  font-size: 82px;
+  font-family: var(--ffh);
+  color: var(--bg);
+  /* font-weight: 900; */
 }
 
 h4 {
