@@ -201,3 +201,8 @@ header {
     width: 90%;
   }
 }
+@media only screen and (max-width: 500px) {
+  .valuetiles .tile {
+    width: 40%;
+  }
+}
