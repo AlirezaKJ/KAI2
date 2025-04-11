@@ -34,6 +34,7 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   overflow: hidden;
+  width: 100%;
 }
 .valuetiles .tile {
   aspect-ratio: 1/1;
@@ -48,6 +49,9 @@ header {
   gap: 5px;
   padding: 20px;
   border-radius: 25px;
+  & * {
+    overflow: hidden;
+  }
 }
 .valuetiles .tile .icon {
   aspect-ratio: 1/1;
@@ -92,17 +96,14 @@ header {
   content: "";
   z-index: 2;
 }
-
 .rollingbrands:before {
   left: 0;
   background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
 }
-
 .rollingbrands:after {
   right: 0;
   background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
-
 .rollingbrands:hover .iconslider {
   animation-play-state: paused;
 }
@@ -196,13 +197,35 @@ header {
     margin: 0px;
   }
 }
+@media only screen and (max-width: 1775px) {
+  .valuetiles .tile {
+    width: 300px;
+    & .icon {
+      width: 60px;
+    }
+    & .title {
+      font-size: 28px;
+    }
+    & .desc {
+      font-size: 18px;
+    }
+  }
+}
+@media only screen and (max-width: 1375px) {
+  .valuetiles {
+    width: 74%;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .valuetiles {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 500px) {
   .valuetiles .tile {
     width: 90%;
   }
 }
-@media only screen and (max-width: 500px) {
-  .valuetiles .tile {
-    width: 40%;
-  }
-}
+/* @media only screen and (max-width: 1375) {
+  
+} */
