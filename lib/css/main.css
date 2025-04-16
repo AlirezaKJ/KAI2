@@ -332,3 +332,174 @@ footer .links a {
 footer .links .active {
   color: var(--plimegreen);
 }
+
+#loadingscreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  background: var(--alttext);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  opacity: 1;
+  overflow: hidden;
+  transition: opacity 0.5s ease 0s, width 0s ease 0.5s;
+  gap: 15px;
+}
+#loadingscreen .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+}
+#loadingscreen p {
+  font-family: var(--ff) 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: 20px;
+  text-align: center;
+  color: var(--bg);
+}
+
+.fadeloadingscreen {
+  opacity: 0 !important;
+  width: 0px !important;
+}
+
+#loadingscreen svg #loadingbot {
+  animation: svgbot 10s linear 0s infinite normal forwards;
+}
+#loadingscreen svg #loadingright {
+  animation: svgright 10s linear 0s infinite normal forwards;
+}
+#loadingscreen svg #loadingleft {
+  animation: svgleft 10s linear 0s infinite normal forwards;
+}
+#loadingscreen svg #loadingtop {
+  animation: svgtop 10s linear 0s infinite normal forwards;
+}
+
+@keyframes svgbot {
+  0% {
+    fill: #1A3E35;
+  }
+  9% {
+    fill: #1A3E35;
+  }
+  10% {
+    fill: var(--bg);
+  }
+  20% {
+    fill: var(--bg);
+  }
+  21% { 
+    fill: #1A3E35;
+  }
+  69% { 
+    fill: #1A3E35;
+  }
+  70% { 
+    fill: var(--bg);
+  }
+  90% {
+    fill: var(--bg);
+  }
+  91% {
+    fill: #1A3E35;
+  }
+  100% {
+    fill: #1A3E35;
+  }
+}
+
+@keyframes svgleft {
+  0% {
+    fill: #266F5B;
+  }
+  19% {
+    fill: #266F5B;
+  }
+  20% {
+    fill: var(--bg);
+  }
+  30% {
+    fill: var(--bg);
+  }
+  31% { 
+    fill: #266F5B;
+  }
+  59% {
+    fill: #266F5B;
+  }
+  60% { 
+    fill: var(--bg);
+  }
+  90% {
+    fill: var(--bg);
+  }
+  91% {
+    fill: #266F5B;
+  }
+  100% {
+    fill: #266F5B;
+  }
+}
+@keyframes svgright {
+  0% {
+    fill: #4BB292;
+  }
+  29% {
+    fill: #4BB292;
+  }
+  30% {
+    fill: var(--bg);
+  }
+  40% {
+    fill: var(--bg);
+  }
+  41% { 
+    fill: #4BB292;
+  }
+  49% {
+    fill: #4BB292;
+  } 
+  50% { 
+    fill: var(--bg);
+  }
+  90% { 
+    fill: var(--bg);
+  }
+  91% {
+    fill: #4BB292;
+  } 
+  100% {
+    fill: #4BB292;
+  }
+}
+@keyframes svgtop {
+  0% {
+    fill: #AEE37B;
+  }
+  39% {
+    fill: #AEE37B;
+  }
+  40% {
+    fill: var(--bg);
+  }
+  50% {
+    fill: var(--bg);
+  }
+  90% {
+    fill: var(--bg);
+  }
+  91% {
+    fill: #AEE37B;
+  }
+  100% {
+    fill: #AEE37B;
+  }
+}
