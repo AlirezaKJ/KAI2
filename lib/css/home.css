@@ -27,6 +27,24 @@ header {
   width: 60px;
   fill: var(--bg);
 }
+.quickinfo .videoshowcase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.quickinfo .videoshowcase h3 {
+  font-size: 46px;
+  margin-bottom: 50px;
+}
+.quickinfo .videoshowcase video {
+  aspect-ratio: 16/9;
+  margin-bottom: 50px;
+  max-width: 100%;
+  width: 65%;
+  background: red;
+}
 .valuetiles {
   display: flex;
   align-items: center;
@@ -44,7 +62,7 @@ header {
   justify-content: center;
   flex-direction: column;
   transition: all 0.25s ease-in-out;
-  background: var(--sdarkgreen);
+  /* background: var(--sdarkgreen); */
   gap: 5px;
   padding: 20px;
   border-radius: 25px;
@@ -60,6 +78,9 @@ header {
   justify-content: center;
 
   & svg {
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: 100%;
     fill: var(--bg);
   }
 }
@@ -169,6 +190,14 @@ header {
   .quickinfo {
     padding: 0px 0px;
   }
+  .quickinfo .videoshowcase h3 {
+    font-size: 32px;
+    margin-bottom: 0px;
+    margin: 50px;
+  }
+  .quickinfo .videoshowcase video {
+    width: 100%;
+  }
   .quickinfo p {
     width: 90%;
   }
@@ -223,6 +252,16 @@ header {
 @media only screen and (max-width: 500px) {
   .valuetiles .tile {
     width: 90%;
+    & .icon {
+      height: 30%;
+      width: 100%;
+    }
+    & .title {
+      font-size: 36px;
+    }
+    & .desc {
+      font-size: 26px;
+    }
   }
 }
 /* @media only screen and (max-width: 1375) {
