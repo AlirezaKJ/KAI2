@@ -268,16 +268,24 @@ header #fsmenu .links a {
   align-items: center;
   justify-content: center;
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 900;
   padding: 20px 26px;
   border-radius: 25px;
-  background: var(--pdarkgreen);
+  /* background: var(--pdarkgreen); */
   color: var(--plimegreen);
   transition: all 0.25s ease-in-out;
   border: solid 3px rgba(0, 0, 0, 0);
-  &:hover {
-    border: solid 3px var(--plimegreen);
+  &:hover svg {
+    margin-left: 30px;
+
+    /* border: solid 3px var(--plimegreen); */
   }
+}
+.contactus .btn svg {
+  transition: all 0.25s ease;
+  margin-left: 10px;
+  scale: 1.2;
+  fill: var(--plimegreen);
 }
 
 footer {
