@@ -62,7 +62,6 @@ nav {
   justify-content: flex-start;
   width: 100%;
   height: 100px;
-  gap: 50px;
 }
 nav .navtitle {
   margin-left: 30px;
@@ -82,6 +81,7 @@ nav a {
   justify-content: center;
   font-size: 30px;
   font-weight: 600;
+  padding: 0px 25px;
   color: var(--bg);
   transition: all 0.3s ease-in-out !important;
   &:hover {
