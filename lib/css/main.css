@@ -74,6 +74,7 @@ nav .navtitle {
 }
 nav .navtitle span {
   transform: translateY(-5px);
+  font-weight: 900;
 }
 nav a {
   display: flex;
