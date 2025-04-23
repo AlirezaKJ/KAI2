@@ -39,7 +39,7 @@ header {
   font-size: 60px;
   font-weight: 900;
   font-family: var(--ff);
-  text-align: center;
+  text-align: left;
   width: 90%;
   overflow: hidden;
 }
@@ -47,7 +47,8 @@ header {
   font-size: 24px;
   font-weight: 500;
   font-family: var(--ff);
-  text-align: center;
+  text-align: left;
+  /* text-justify: inter-ideograph; */
   width: 90%;
   overflow: hidden;
 }
