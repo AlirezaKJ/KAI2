@@ -128,7 +128,7 @@ header {
 }
 .rollingbrands .iconslider {
   display: inline-block;
-  animation: 25s slide infinite linear;
+  animation: 32s slide infinite linear;
 }
 .rollingbrands .iconslider img {
   height: 100px;
@@ -207,6 +207,9 @@ header {
   }
   .rollingbrands {
     padding: 20px 0px;
+  }
+  .rollingbrands .iconslider {
+    animation: 26s slide infinite linear;
   }
   .rollingbrands .iconslider img {
     height: 60px;
