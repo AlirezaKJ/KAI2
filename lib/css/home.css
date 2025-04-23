@@ -58,7 +58,7 @@ header {
   margin: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   transition: all 0.25s ease-in-out;
   /* background: var(--sdarkgreen); */
@@ -192,7 +192,7 @@ header {
   .quickinfo .videoshowcase h3 {
     font-size: 32px;
     margin-bottom: 0px;
-    margin: 50px;
+    margin: 50px 0px;
   }
   .quickinfo .videoshowcase video {
     width: 100%;
@@ -251,15 +251,25 @@ header {
 @media only screen and (max-width: 500px) {
   .valuetiles .tile {
     width: 90%;
+    /* aspect-ratio: none; */
+    height: 400px;
     & .icon {
       height: 30%;
       width: 100%;
+      overflow: visible;
+      & svg {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+      }
     }
     & .title {
       font-size: 36px;
+      overflow: visible;
     }
     & .desc {
       font-size: 26px;
+      overflow: visible;
     }
   }
 }
