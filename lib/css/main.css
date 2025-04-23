@@ -9,8 +9,8 @@
 }
 
 :root {
-  --ff: "Manrope";
-  --ffh: "Shippori";
+  --ff: "Manrope", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --ffh: "Shippori", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --text: #1E1E1E;
   --bg: #F8F8F8;
   --altbg: #b1b1b1;
