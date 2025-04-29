@@ -28,84 +28,130 @@ nav .open svg:hover {
 } */
 
 .projects {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-.projects .project {
-  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+.projects .group {
+  background: var(--pdarkgreen);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 100px;
+  padding: 100px 0;
+  color: var(--bg);
+}
+.projects .groupalt {
+  background: var(--plimegreen);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 100px;
+  padding: 100px 0;
+  color: var(--text);
+}
+.projects .project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: 100%;
+}
+.projects .project .detailbox {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background: var(--stealgreen); */
+}
+.projects .project .detailbox h4 {
+  font-size: 48px;
+  font-weight: 900;
+  font-family: var(--ff);
+  text-align: left;
+  text-indent: 10px;
+  width: 90%;
+  padding: 10px 0px;
+  overflow: hidden;
+}
+.projects .project .detailbox p {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: var(--ff);
+  text-align: left;
+  /* text-justify: inter-ideograph; */
+  /* width: 90%; */
+  margin: 0px 20px;
+  /* overflow: hidden; */
+}
+.projects .project .imgbox {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-.projects .project .infobox {
-  width: 40%;
-  background-color: rgba(18, 56, 0, 0.8);
-  background-color: rgba(11, 77, 58, 0.8);
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  color: var(--bg);
-  z-index: 2;
-  padding: 50px;
-  backdrop-filter: blur(10px);
-}
-.projects .project .infobox h4 {
-  text-align: center;
-  font-family: var(--ff);
-  font-size: 96px; 
-  font-weight: 900;
-}
-.projects .project .infobox h5 {
-  text-align: center;
-  font-family: var(--ff);
-  font-size: 50px;
-  font-weight: 700;
-  margin-bottom: 50px;
-}
-.projects .project .infobox p {
-  font-size: 32px;
-  font-weight: 400;
-  text-align: left;
-}
-.projects .alt {
-  justify-content: flex-end;
-  & .infobox {
-    background-color: rgba(18, 51, 42, 0.8);
-    color: var(--bg);
+  & img {
+    width: 100%;
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  .projects .project {
-    flex-direction: column;
-    height: 100vh;
+@media only screen and (max-width: 800px) {
+  .projects .group {
+    padding: 20px 0px;
+    gap: 10px;
   }
-  .projects .project .infobox {
-    flex-wrap: wrap;
+  .projects .groupalt {
+    padding: 10px 0px;
+    gap: 10px;
+  }
+  .projects .project {
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+  }
+  .projects .project .imgbox {
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-    padding: 10px;
-    width: 100%;
+    width: 95%;
     height: auto;
+    aspect-ratio: 16/9;
+    overflow: hidden;
   }
-  .projects .project .infobox h4 {
-    font-size: 46px;
+  .projects .project .detailbox {
+    width: 100%;
+    gap: 10px;
   }
-  .projects .project .infobox h5 {
+  .projects .project .detailbox h4 {
+    text-align: center;
+    text-indent: 0px;
     font-size: 32px;
-    margin: 0px;
   }
-  .projects .project .infobox p {
+  .projects .project .detailbox p {
     font-size: 20px;
+    width: 95%;
+    /* text-align: justify; */
+    /* text-justify: inter-word; */
   }
-  .projects .alt {
-    flex-direction: column-reverse;
+
+}
+@media only screen and (max-width: 1000px) {
+  .projects .project .detailbox h3 {
+    font-size: 45px;
   }
 }
