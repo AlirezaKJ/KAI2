@@ -34,6 +34,52 @@ header {
   border-radius: 50px;
   backdrop-filter: blur(15px);
 }
+.form .row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+.form .row .col {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 25px 50px;
+  width: 50%;
+  /* height: 700px; */
+}
+.form .title {
+  font-size: 36px;
+  color: var(--bg);
+  text-align: right;
+  margin: 0;
+  width: 100%;
+}
+.form .locations {
+  background: var(--pdarkgreen);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 25px;
+}
+.form .locations .item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+  font-size: 36px;
+  color: var(--bg);
+  & svg {
+    fill: var(--bg);
+  }
+}
 .form .shortinput {
   display: flex;
   align-items: flex-start;
@@ -143,5 +189,11 @@ header {
     height: 110px;
     font-size: 40px;
     border-radius: 15px;
+  }
+  .form .row {
+    flex-direction: column-reverse;
+  }
+  .form .row .col {
+    width: 100%;
   }
 }
