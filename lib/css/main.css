@@ -29,7 +29,7 @@
   box-sizing: border-box;
   font-family: var(--ff);
   font-display: auto;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   overflow-x: hidden;
 }
 
