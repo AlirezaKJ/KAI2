@@ -72,6 +72,10 @@ nav .navtitle {
   color: var(--bg);
   z-index: 2;
   transition: all 0.3s ease-in-out;
+  width: 200px;
+  & svg {
+    width: 100%;
+  }
 }
 nav .navtitle span {
   transform: translateY(-5px);
