@@ -53,7 +53,7 @@ header {
 .form .title {
   font-size: 36px;
   color: var(--bg);
-  text-align: right;
+  text-align: left;
   margin: 0;
   width: 100%;
 }
