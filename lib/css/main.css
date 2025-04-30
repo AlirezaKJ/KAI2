@@ -1,7 +1,7 @@
 /* Loading Fonts */
 @font-face {
   font-family: "Shippori";
-  src: url(../fonts/Shippori/ShipporiAntique-Regular.woff);
+  src: url(../fonts/Shippori/shippori-antique-latin-400-normal.woff);
 }
 @font-face {
   font-family: "Manrope";
@@ -10,7 +10,7 @@
 
 :root {
   --ff: "Manrope", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --ffh: "Shippori", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --ffh: "Shippori"; /*, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   --text: #1E1E1E;
   --bg: #F8F8F8;
   --altbg: #b1b1b1;
