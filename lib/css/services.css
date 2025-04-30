@@ -13,7 +13,7 @@ header {
   padding: 100px 0px;
 }
 .services h3 {
-  width: 95%;
+  width: 80%;
   font-size: 42px;
   font-weight: 800;
   margin-bottom: 40px;
@@ -21,25 +21,25 @@ header {
   color: var(--plimegreen);
 }
 .services h4 {
-  width: 60%;
+  width: 100%;
   font-size: 32px;
   font-weight: 800;
   margin: 20px;
   color: var(--plimegreen);
 }
 .services p {
-  width: 55%;
+  width: 100%;
   font-size: 28px;
   margin: 10px;
 }
 .services .widep {
-  width: 65%;
+  width: 80%;
   font-size: 32px;
 }
 .services ul {
   overflow: hidden;
   margin: 10px;
-  width: 55%;
+  width: 100%;
   list-style-type: disc;
   list-style-position: inside;
 }
@@ -48,15 +48,87 @@ header {
   font-size: 24px;
   margin: 8px 0px;
 }
+.services .row {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services .row .col {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.services .infobox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 5px;
+  margin: 10px;
+}
+.services .imgbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16/9;
+  width: 100%;
+  & img {
+    width: 95%;
+  }
+}
 
-@media only screen and (max-width: 900px) {
+
+@media only screen and (max-width: 950px) {
   .services {
     padding: 50px 0px;
+  }
+  .services .row {
+    flex-direction: column-reverse;
+    width: 95%;
+  }
+  .services .row:nth-child(odd) {
+    flex-direction: column;
+  }
+  .services .row .col {
+    width: 100%;
   }
   .services h3 {
     width: 95%;
     text-align: left;
     font-size: 30px;
+  }
+  .services h4 {
+    width: 95%;
+    font-size: 27px;
+  }
+  .services .widep {
+    width: 95%;
+    font-size: 24px;
+  }
+  .services p {
+    width: 95%;
+    font-size: 24px;
+  }
+  .services ul {
+    width: 95%;
+    & li {
+      font-size: 21px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .services .row {
+    width: 95%;
+  }
+  .services h3 {
+    width: 95%;
+    font-size: 30px;
+    text-align: left;
   }
   .services h4 {
     width: 95%;
