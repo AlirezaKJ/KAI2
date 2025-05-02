@@ -173,6 +173,7 @@ header {
   }
 }
 .quickinfo .smallindustry .industryitem .industrytitle {
+  text-align: center;
   color: var(--bg);
   font-size: 36px;
   font-weight: 700;
@@ -229,6 +230,7 @@ header {
     width: 100%;
     margin: 0px;
   }
+  
 }
 @media only screen and (max-width: 1775px) {
   .valuetiles .tile {
@@ -249,11 +251,19 @@ header {
     width: 74%;
   }
 }
+
+@media only screen and (max-width: 1150px) {
+  .quickinfo .smallindustry .industryitem .industrytitle {
+    width: 75%;
+  }
+}
+
 @media only screen and (max-width: 950px) {
   .valuetiles {
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 500px) {
   .valuetiles .tile {
     width: 90%;
