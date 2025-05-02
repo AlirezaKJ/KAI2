@@ -1,8 +1,12 @@
 /* ! If the screen size is 600px or less */
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1400px) {
   nav a {
     padding: 0px 12px;
     font-size: 25px;
+  }
+  nav .navtitle {
+    width: 150px;
+    margin-left: 15px;
   }
 }
 @media only screen and (max-width: 1050px) {
