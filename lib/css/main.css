@@ -7,6 +7,10 @@
   font-family: "Manrope";
   src: url(../fonts/Manrope/Manrope-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: "Gotham";
+  src: url(../fonts/Gotham/Gotham-Medium.otf);
+}
 
 :root {
   --ff: "Manrope", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -53,6 +57,10 @@ h1, h2, h3 {
 .bolden {
   font-weight: 800;
   font-size: 32px;
+}
+
+.dash2 {
+  font-family: "Gotham";
 }
 
 nav {
