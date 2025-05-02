@@ -219,6 +219,9 @@ header {
   .rollingbrands:after {
     display: none;
   }
+  .rollingbrands:hover .iconslider {
+    animation-play-state: running;
+  }
   .quickinfo .smallindustry {
     flex-direction: column;
   }
