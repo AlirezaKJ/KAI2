@@ -17,12 +17,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 90%;
   height: 600px;
 }
 
 .industries .industryitem .detailbox {
-  width: 40%;
+  width: 45%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -44,7 +44,7 @@ header {
   overflow: hidden;
 }
 .industries .industryitem .detailbox p {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 500;
   font-family: var(--ff);
   text-align: left;
@@ -53,7 +53,7 @@ header {
   overflow: hidden;
 }
 .industries .industryitem .imgbox {
-  width: 60%;
+  width: 55%;
   height: 100%;
   display: flex;
   align-items: center;
