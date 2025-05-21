@@ -67,7 +67,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .industries {
     padding: 0;
     gap: 0px;
@@ -105,7 +105,7 @@ header {
   }
 
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1250px) {
   .industries .industryitem .detailbox h3 {
     font-size: 45px;
   }
